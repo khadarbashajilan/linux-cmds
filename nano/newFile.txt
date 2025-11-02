@@ -1,0 +1,2 @@
+created and wrritten using cat command
+it is appended by using echo
