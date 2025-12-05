@@ -21,7 +21,15 @@ mul(){
 }
 
 div(){
-    echo $(($1 / $2))
+    if [[ $2 -eq 0 ]]
+    then
+        echo "Can't divide by 0"
+    elif [[ $1 -eq 0 ]]
+    then
+        echo 0
+    else
+        echo $(($1 / $2))
+    fi
 }
 
 while [ $stop -ne 0 ]; do
